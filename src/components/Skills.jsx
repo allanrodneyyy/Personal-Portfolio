@@ -7,34 +7,34 @@ export function Skills() {
       md:justify-between justify-center p-5 gap-10 sm:gap-5 items-center
       font-roboto-condensed'>
 
-        <div className='text-6xl md:text-9xl tracking-tighter flex flex-col items-center md:block text-gray-500'>
+        <div className='text-6xl md:text-9xl tracking-tighter flex flex-col items-center md:block text-black'>
           <p>Developer</p>
           <p>Designer</p>
           <p>Creator/</p>
         </div>
 
         <div className='flex flex-col items-center gap-5 sm:gap-10'>
-          <p className='text-5xl md:text-8xl text-gray-500 tracking-tighter'>Skills</p>
+          <p className='text-5xl md:text-8xl text-black tracking-tighter'>Skills</p>
           <div className='flex justify-around w-full gap-0.5'>
             <div className='flex flex-col gap-2'>
-              <p className='hidden sm:block font-bold text-gray-500'>Language</p>
-              <section className='flex flex-col gap-0.5'>
+              <p className='hidden sm:block font-bold text-black'>Language</p>
+              <section className='flex flex-col gap-0.5 text-gray-500'>
                 <p>JavaScript</p>
                 <p>SQL</p>
                 <p>Java</p>
               </section>
             </div>
             <div className='flex flex-col gap-2'>
-              <p className='hidden sm:block font-bold text-gray-500'>Frameworks & Libraries</p>
-              <section className='flex flex-col gap-0.5'>
+              <p className='hidden sm:block font-bold text-black'>Frameworks & Libraries</p>
+              <section className='flex flex-col gap-0.5 text-gray-500'>
                 <p>TailwindCSS</p>
                 <p>Express.js</p>
                 <p>Node.js</p>
               </section>
             </div>
-            <div className='flex flex-col gap-2'>
-              <p className='hidden sm:block font-bold text-gray-500'>Tools</p>
-              <section className='flex flex-col gap-0.5'>
+            <div className='flex flex-col gap-2 '>
+              <p className='hidden sm:block font-bold text-black'>Tools</p>
+              <section className='flex flex-col gap-0.5 text-gray-500'>
                 <p>Git & GitHub</p>
                 <p>Docker</p>
               </section>
