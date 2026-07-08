@@ -47,19 +47,19 @@ export function Subheader() {
             sm:hidden
             block"
           >
-            Aspiring full stack developer
+            Aspiring software engineer
           </h1>
         </div>
-        <div className='flex flex-col gap-5 sm:gap-10 text-gray-500 font-semibold'>
+        <div className='flex flex-col gap-5 text-gray-500 font-semibold tracking-tighter'>
           <div className='hidden sm:block'>
             <FiArrowDownRight color='light-gray' size={52} />
           </div>
           <div>
             <p className='hidden sm:flex md:w-sm text-base w-3/4 sm:text-3xl'>
-              As an Aspiring full stack developer, I love building things that scratches my interest.
+              Aspiring Software Engineer passionate about building scalable applications and intuitive user experiences.
             </p>
             <p className='flex sm:hidden md:w-sm text-base w-3/4 sm:text-2xl'>
-              that loves building things that scratches his interest.
+              that is passionate about building scalable applications and intuitive user experiences.
             </p>
           </div>
 
@@ -67,7 +67,7 @@ export function Subheader() {
             <div className='block sm:hidden mb-2'>
               <FiArrowDownRight color='light-gray' size={30} />
             </div>
-            <button className='flex items-center gap-0.5 border px-5 py-2 sm:px-6 sm:py-4 text-white bg-gray-500 rounded-4xl'>
+            <button className='flex items-center gap-0.5 border px-5 py-2 sm:px-6 sm:py-4 text-white bg-black rounded-4xl'>
               Contact me
               <FiArrowUpRight />
             </button>

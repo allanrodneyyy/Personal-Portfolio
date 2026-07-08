@@ -1,0 +1,46 @@
+import { useState } from "react";
+import { Images } from "./Images";
+
+export function Projects() {
+
+  const [projectNumber, setProjectNumber] = useState("01");
+
+  return (
+    <section className="min-h-screen font-black p-5
+    font-roboto-condensed tracking-tighter">
+      <div className="grid grid-cols-1 gap-10 mb-20 ">
+        <p className="text-6xl md:text-9xl">Personal Project/ </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2">
+          <div></div>
+          <p className='sm:flex md:w-sm text-base w-3/4 sm:text-3xl text-gray-500'>
+            Ideas that is made into reliable digital projects through clean code, thoughtful design, and with purpose.
+          </p>
+        </div>
+      </div>
+
+      <div className="min-h-screen grid grid-cols-1 sm:grid-cols-2 relative">
+        <div className="hidden sm:block">
+          <h1
+            className="
+            pointer-events-none
+            sticky
+            left-1/2
+            top-0
+            text-[15vw]
+            leading-none
+            font-black
+            tracking-tighter
+            text-neutral-900
+            sm:block
+            hidden"
+          >
+            {projectNumber}
+          </h1>
+        </div>
+        <div>
+          <Images setProjectNumber={setProjectNumber} />
+        </div>
+      </div>
+    </section>
+  );
+}
