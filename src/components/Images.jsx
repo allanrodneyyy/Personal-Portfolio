@@ -1,4 +1,7 @@
 import { useEffect, useRef } from "react";
+import studentTaskList from "../assets/screenshots/student-task-list-1.png";
+import vanta from "../assets/screenshots/vanta-1.png";
+
 
 export function Images({ setProjectNumber }) {
   // const images = [
@@ -10,11 +13,11 @@ export function Images({ setProjectNumber }) {
   const images = [{
     id: 0,
     title: 'Vanta',
-    path: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG6IHwMzND7z8Ztasmil8U0hFJxlrnKenEcJECDzcLrTvm6EWXTWKwxAA&s=10"
+    path: vanta
   }, {
     id: 0,
     title: 'Student Task List',
-    path: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG6IHwMzND7z8Ztasmil8U0hFJxlrnKenEcJECDzcLrTvm6EWXTWKwxAA&s=10"
+    path: studentTaskList
   }]
 
   const imgRefs = useRef([]);
