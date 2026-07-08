@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import studentTaskList from "../assets/screenshots/student-task-list-1.png";
 import vanta from "../assets/screenshots/vanta-1.png";
+import shop from "../assets/screenshots/jadeys-1.png";
 
 
 export function Images({ setProjectNumber }) {
@@ -15,10 +16,15 @@ export function Images({ setProjectNumber }) {
     title: 'Vanta',
     path: vanta
   }, {
-    id: 0,
+    id: 1,
     title: 'Student Task List',
     path: studentTaskList
-  }]
+  }, {
+    id: 2,
+    title: 'Point of Sales and Reservation System',
+    path: shop
+  }
+  ]
 
   const imgRefs = useRef([]);
 

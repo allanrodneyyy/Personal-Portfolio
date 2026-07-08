@@ -18,26 +18,20 @@ export function Projects() {
         </div>
       </div>
 
-      <div className="min-h-screen grid grid-cols-1 sm:grid-cols-2 relative">
+      <div className="grid grid-cols-1 sm:grid-cols-[1fr_1fr]">
         <div className="hidden sm:block">
-          <h1
-            className="
-            pointer-events-none
-            sticky
-            left-1/2
-            top-0
-            text-[15vw]
-            leading-none
-            font-black
-            tracking-tighter
-            text-neutral-900
-            sm:block
-            hidden"
-          >
+          <h1 className="
+      sticky top-0
+      text-[15vw]
+      leading-none
+      font-black
+      tracking-tighter
+    ">
             {projectNumber}
           </h1>
         </div>
-        <div>
+
+        <div className="space-y-10">
           <Images setProjectNumber={setProjectNumber} />
         </div>
       </div>
