@@ -42,50 +42,67 @@ const AnimatedContent = ({
     const startPct = (1 - threshold) * 100;
 
     gsap.set(el, {
-      [axis]: offset,
+      x: direction === "horizontal" ? offset : 0,
+      y: direction === "vertical" ? offset : 0,
       scale,
       opacity: animateOpacity ? initialOpacity : 1,
-      visibility: 'visible'
+      visibility: "visible",
     });
 
-    const tl = gsap.timeline({
-      paused: true,
-      delay,
-      onComplete: () => {
-        if (onComplete) onComplete();
-        if (disappearAfter > 0) {
-          gsap.to(el, {
-            [axis]: reverse ? distance : -distance,
-            scale: 0.8,
-            opacity: animateOpacity ? initialOpacity : 0,
-            delay: disappearAfter,
-            duration: disappearDuration,
-            ease: disappearEase,
-            onComplete: () => onDisappearanceComplete?.()
-          });
-        }
-      }
-    });
-
-    tl.to(el, {
-      [axis]: 0,
-      scale: 1,
-      opacity: 1,
-      duration,
-      ease
-    });
 
     const st = ScrollTrigger.create({
       trigger: el,
       scroller: scrollerTarget,
       start: `top ${startPct}%`,
-      once: true,
-      onEnter: () => tl.play()
+      end: "bottom 20%",
+
+      onEnter: () => {
+        gsap.to(el, {
+          [axis]: 0,
+          opacity: 1,
+          scale: 1,
+          duration,
+          ease,
+          overwrite: "auto"
+        });
+      },
+
+      onLeave: () => {
+        gsap.to(el, {
+          [axis]: reverse ? distance : -distance,
+          opacity: initialOpacity,
+          scale,
+          duration: disappearDuration,
+          ease: disappearEase,
+          overwrite: "auto"
+        });
+      },
+
+      onEnterBack: () => {
+        gsap.to(el, {
+          [axis]: 0,
+          opacity: 1,
+          scale: 1,
+          duration,
+          ease,
+          overwrite: "auto"
+        });
+      },
+
+      onLeaveBack: () => {
+        gsap.to(el, {
+          [axis]: offset,
+          opacity: initialOpacity,
+          scale,
+          duration: disappearDuration,
+          ease: disappearEase,
+          overwrite: "auto"
+        });
+      }
     });
 
     return () => {
       st.kill();
-      tl.kill();
     };
   }, [
     container,
@@ -107,7 +124,7 @@ const AnimatedContent = ({
   ]);
 
   return (
-    <div ref={ref} className={className} style={{ visibility: 'hidden' }} {...props}>
+    <div ref={ref} className={className} style={{ visibility: 'visible' }} {...props}>
       {children}
     </div>
   );

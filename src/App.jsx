@@ -43,7 +43,15 @@ function App() {
       <AnimatedContent
         distance={100}
         direction="vertical"
+        reverse={false}
         duration={0.8}
+        ease="power3.out"
+        initialOpacity={0}
+        animateOpacity
+        scale={1}
+        threshold={0.3}
+        delay={0}
+        once
       >
         <Subheader />
       </AnimatedContent>
@@ -52,7 +60,14 @@ function App() {
       <AnimatedContent
         distance={100}
         direction="vertical"
-        duration={1}
+        reverse={false}
+        duration={0.8}
+        ease="power3.out"
+        initialOpacity={0}
+        animateOpacity
+        scale={1}
+        threshold={0.3}
+        delay={0}
       >
         <Skills />
       </AnimatedContent>
@@ -61,7 +76,14 @@ function App() {
       <AnimatedContent
         distance={100}
         direction="vertical"
+        reverse={false}
         duration={0.8}
+        ease="power3.out"
+        initialOpacity={0}
+        animateOpacity
+        scale={1}
+        threshold={0.3}
+        delay={0}
       >
         <Projects />
       </AnimatedContent>

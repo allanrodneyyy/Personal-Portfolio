@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const CHARACTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+const CHARACTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 function randomChar() {
   return CHARACTERS[Math.floor(Math.random() * CHARACTERS.length)];
