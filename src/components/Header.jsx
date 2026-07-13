@@ -5,7 +5,9 @@ import { FaRegFilePdf } from "react-icons/fa6";
 import { GoMoon } from "react-icons/go";
 import { CiSearch } from "react-icons/ci";
 import { CiKeyboard } from "react-icons/ci";
-import SlotWord from "../utils/SlotWord";
+import SlotWord from "./Animations/SlotWord";
+import TrueFocus from './Animations/TrueFocus';
+
 
 export function Header() {
   return (
@@ -17,6 +19,8 @@ export function Header() {
         <div className='block sm:hidden'>
           <SlotWord className="sm:hidden block " word="ARFM" />
         </div>
+
+
         <div className='hidden sm:block text-gray-500'>
           <p>Developer & Designer</p>
         </div>
@@ -32,12 +36,12 @@ export function Header() {
               <p className='text-sm bg-white'>Search</p>
               <CiKeyboard />
             </div>
-            <button className='hidden sm:block'>
+            <a href="#projects" className='hidden sm:block'>
               Projects
-            </button>
-            <button className='hidden sm:block'>
+            </a>
+            <a href="#" className='hidden sm:block'>
               Experience
-            </button>
+            </a>
           </div>
           <div className='flex gap-2 sm:gap-5 text-gray-500 items-center'>
             <p className='text-gray-200 hidden sm:block'>|</p>

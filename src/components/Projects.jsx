@@ -6,8 +6,8 @@ export function Projects() {
   const [projectNumber, setProjectNumber] = useState("01");
 
   return (
-    <section className="min-h-screen font-black p-5
-    font-roboto-condensed tracking-tighter">
+    <section id="projects" className="min-h-screen font-black p-5
+    font-roboto-condensed tracking-tighter ">
       <div className="grid grid-cols-1 gap-10 mb-20 ">
         <p className="text-6xl md:text-9xl">Personal Project/ </p>
         <div className="grid grid-cols-1 sm:grid-cols-2">

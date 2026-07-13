@@ -5,8 +5,8 @@ import { Subheader } from './components/Subheader'
 import { Projects } from './components/Projects'
 import { Footer } from './components/Footer'
 import { Routes, Route } from 'react-router'
-import Particles from './components/Particles'
-import AnimatedContent from './components/AnimatedContent'
+import Particles from './components/Animations/Particles'
+import AnimatedContent from './components/Animations/AnimatedContent'
 
 
 function App() {
@@ -14,12 +14,24 @@ function App() {
   return (
     <div className="relative min-h-screen ">
 
-      <div className="fixed inset-0 -z-10">
+      <div className="fixed inset-0 -z-10 sm:block hidden">
         <Particles
-          particleColors={['#ffffff']}
+          particleColors={['#171717', '#262626', '#404040']}
           particleCount={200}
-          particleSpread={12}
-          speed={0.08}
+          particleSpread={20}
+          speed={0.09}
+          particleBaseSize={100}
+          moveParticlesOnHover={true}
+          alphaParticles={true}
+        />
+      </div>
+
+      <div className="fixed inset-0 -z-10 sm:hidden block">
+        <Particles
+          particleColors={['#171717', '#262626', '#404040']}
+          particleCount={100}
+          particleSpread={10}
+          speed={0.09}
           particleBaseSize={100}
           moveParticlesOnHover={true}
           alphaParticles={true}
