@@ -12,7 +12,7 @@ import AnimatedContent from './components/Animations/AnimatedContent'
 function App() {
 
   return (
-    <div className="relative min-h-screen ">
+    <div className="relative min-h-dvh">
 
       <div className="fixed inset-0 -z-10 sm:block hidden">
         <Particles
@@ -44,14 +44,13 @@ function App() {
         distance={100}
         direction="vertical"
         reverse={false}
-        duration={0.8}
+        duration={1.5}
         ease="power3.out"
         initialOpacity={0}
         animateOpacity
         scale={1}
         threshold={0.3}
         delay={0}
-        once
       >
         <Subheader />
       </AnimatedContent>
@@ -61,7 +60,7 @@ function App() {
         distance={100}
         direction="vertical"
         reverse={false}
-        duration={0.8}
+        duration={1.5}
         ease="power3.out"
         initialOpacity={0}
         animateOpacity
@@ -77,7 +76,7 @@ function App() {
         distance={100}
         direction="vertical"
         reverse={false}
-        duration={0.8}
+        duration={1.5}
         ease="power3.out"
         initialOpacity={0}
         animateOpacity

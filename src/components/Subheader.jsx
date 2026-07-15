@@ -7,7 +7,6 @@ export function Subheader() {
   return (
     <>
       <section id="home-section" className="p-5 font-roboto-condensed
-      min-h-screen
       grid grid-rows-3 
       tracking-tight
       ">
@@ -73,7 +72,7 @@ export function Subheader() {
             </button>
           </div>
         </div>
-        <div className="mt-auto mb-8 flex flex-col items-end text-gray-500 font-semibold">
+        <div className="flex flex-col items-end justify-end text-gray-500 font-semibold">
           <p className='text-sm md:text-base'>Employment Status:</p>
           <p className='text-sm md:text-base'>Available for work</p>
           <p className='text-black text-4xl font-extrabold md:text-9xl'>JUL'26</p>
