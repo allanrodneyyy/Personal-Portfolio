@@ -85,7 +85,7 @@ export function Images({ setProjectNumber }) {
   return (
     <>
       {images.map((image, index) => (
-        <div key={image.id} className="border border-dashed border-gray-300 rounded-2xl">
+        <div key={image.id} className="border border-dashed border-gray-300 rounded-2xl shadow-md">
           <div className="border-b border-dashed border-gray-300">
             <img className="object-fill p-5 "
               data-index={index}

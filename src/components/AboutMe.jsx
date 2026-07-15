@@ -4,7 +4,7 @@ export function AboutMe() {
   return (
     <section className="grid grid-cols-1 sm:grid-cols-2 place-items-center">
       <div className='p-5 sm:w-1/2'>
-        <img src={profilePicture} alt="" className='rounded-xl' />
+        <img src={profilePicture} alt="" className='rounded-xl shadow-xl' />
       </div>
       <div className='flex flex-col w-full h-full  gap-2 text-gray-500 font-roboto-condensed font-semibold sm:align-center sm:justify-center'>
         <div className='p-5 sm:w-[66%]'>
