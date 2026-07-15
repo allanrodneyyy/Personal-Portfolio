@@ -7,6 +7,7 @@ import { CiSearch } from "react-icons/ci";
 import { CiKeyboard } from "react-icons/ci";
 import SlotWord from "./Animations/SlotWord";
 import TrueFocus from './Animations/TrueFocus';
+import cv from '../assets/MANIAGO-CV-2026.pdf'
 
 
 export function Header() {
@@ -45,7 +46,7 @@ export function Header() {
           </div>
           <div className='flex gap-2 sm:gap-5 text-gray-500 items-center'>
             <p className='text-gray-200 hidden sm:block'>|</p>
-            <a href="MANIAGO-CV-2026.pdf" download="MANIAGO-CV-2026.pdf">
+            <a href={cv} download="MANIAGO-CV-2026.pdf">
               <p><FaRegFilePdf /></p>
             </a>
 
