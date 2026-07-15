@@ -8,6 +8,7 @@ import { Routes, Route } from 'react-router'
 import Particles from './components/Animations/Particles'
 import AnimatedContent from './components/Animations/AnimatedContent'
 import Contributions from './components/Contributions'
+import { AboutMe } from './components/AboutMe'
 
 
 function App() {
@@ -69,7 +70,9 @@ function App() {
         threshold={0.3}
         delay={0}
       >
+        <AboutMe></AboutMe>
         <Skills />
+
       </AnimatedContent>
 
 

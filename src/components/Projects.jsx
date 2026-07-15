@@ -8,8 +8,8 @@ export function Projects() {
   return (
     <section id="projects" className="min-h-screen font-black p-5
     font-roboto-condensed tracking-tighter ">
-      <div className="grid grid-cols-1 gap-10 mb-20 ">
-        <p className="text-6xl md:text-9xl">Personal Project/ </p>
+      <div className="grid grid-cols-1 gap-10 mb-10 ">
+        <p className="text-5xl md:text-9xl font-semibold">Personal Project/ </p>
         <div className="grid grid-cols-1 sm:grid-cols-2">
           <div></div>
           <p className='sm:flex md:w-sm text-base w-3/4 sm:text-3xl text-gray-500'>
@@ -31,7 +31,7 @@ export function Projects() {
           </h1>
         </div>
 
-        <div className="space-y-10">
+        <div className="space-y-5">
           <Images setProjectNumber={setProjectNumber} />
         </div>
 
