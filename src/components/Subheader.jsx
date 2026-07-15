@@ -7,10 +7,10 @@ export function Subheader() {
   return (
     <>
       <section id="home-section" className="p-5 font-roboto-condensed
-      grid grid-rows-3 
+      grid grid-rows-3 min-h-4/5
       tracking-tight
       ">
-        <div className='relative '>
+        <div className='relative'>
           <h1
             className="
             pointer-events-none
@@ -72,7 +72,18 @@ export function Subheader() {
             </button>
           </div>
         </div>
-        <div className="flex flex-col items-end justify-end text-gray-500 font-semibold">
+        <div className=" fixed
+          bottom-3
+          right-3
+          md:bottom-8
+          md:right-8
+          flex
+          flex-col
+          items-end
+          justify-end
+          text-gray-500
+          font-semibold
+          z-50">
           <p className='text-sm md:text-base'>Employment Status:</p>
           <p className='text-sm md:text-base'>Available for work</p>
           <p className='text-black text-4xl font-extrabold md:text-9xl'>JUL'26</p>

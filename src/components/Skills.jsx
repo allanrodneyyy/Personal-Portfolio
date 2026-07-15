@@ -2,7 +2,7 @@ import '../index.css'
 import RotatingText from './Animations/RotatingText';
 import { FiArrowRight } from "react-icons/fi";
 import { BsStack } from "react-icons/bs";
-import { useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { FaDocker, FaGit, FaGitAlt, FaHtml5, FaNode, FaPython, FaFigma, FaGithub, FaNpm } from "react-icons/fa";
 import { FaCss3 } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
@@ -13,36 +13,32 @@ import { GrMysql } from 'react-icons/gr';
 import { VscCode } from 'react-icons/vsc';
 
 export function Skills() {
-  const buttonElem = useRef();
-
-
+  const [isHovered, setIsHovered] = useState(false);
 
   return (
     <>
-
       <section className='grid grid-cols-1 md:grid-cols-2 sm:my-10
-      md:justify-between justify-center p-5 gap-10 sm:gap-5 items-center
-      font-roboto-condensed'>
+      md:justify-between justify-center p-5 gap-10 sm:gap-5 items-center sm:py-20
+      '>
 
         <div className='text-6xl md:text-9xl tracking-tighter flex flex-col items-center md:block text-black '>
-          <p>Developer</p>
-          <p>Designer</p>
-          <p>Creator/</p>
+          <p className='font-roboto-condensed font-semibold'>Developer</p>
+          <p className='font-roboto-condensed font-semibold'>Designer</p>
+          <p className='font-roboto-condensed font-semibold'>Creator/</p>
         </div>
 
         <div className='flex flex-col gap-2 sm:gap-4'>
-          <div className='flex items-center justify-between sm:w-4/5'>
-            <p className='text-black tracking-tighter text-xl sm:text-2xl'>Technologies</p>
-            <section className='flex items-center gap-5 text-gray-500 '>
-              <div className='flex items-center gap-2'>
-                <p className='text-sm sm:text-base font-light'>View All</p>
-                <FiArrowRight size={12} />
-              </div>
-              <button className=''><BsStack></BsStack></button>
-            </section>
+          <div className='flex items-center justify-between w-4/5'>
+            <p className='text-black tracking-tighter text-xl sm:text-2xl font-roboto-condensed'>Technologies</p>
+            {/* <section className='flex items-center gap-5 text-gray-500'>
+              <button
+                onMouseEnter={() => setIsHovered(true)}
+                onMouseLeave={() => setIsHovered(false)}
+              >{isHovered ? <BsStack color='black' /> : <BsStack />}</button>
+            </section> */}
           </div>
 
-          <section className='flex flex-col gap-2'>
+          <section className='flex flex-col gap-2 '>
             <p className='text-gray-500 text-sm tracking-tighter'>FRONTEND</p>
             <div className='flex gap-2 flex-wrap'>
               <p className='flex items-center gap-1 text-sm border-dashed border-gray-400 border rounded-md py-1 px-2.5 shadow'>

@@ -21,12 +21,12 @@ export function Projects() {
       <div className="grid grid-cols-1 sm:grid-cols-[1fr_1fr]">
         <div className="hidden sm:block">
           <h1 className="
-      sticky top-0
-      text-[15vw]
-      leading-none
-      font-black
-      tracking-tighter
-    ">
+              sticky top-0
+              text-[15vw]
+              leading-none
+              font-black
+              tracking-tighter
+            ">
             {projectNumber}
           </h1>
         </div>
@@ -34,6 +34,8 @@ export function Projects() {
         <div className="space-y-10">
           <Images setProjectNumber={setProjectNumber} />
         </div>
+
+
       </div>
     </section>
   );
