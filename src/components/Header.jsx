@@ -47,9 +47,6 @@ export function Header() {
             <a href='https://github.com/allanrodneyyy' target='_blank'><FiGithub /></a>
             <a href='https://www.linkedin.com/in/allanrodneymaniago/ ' target='_blank'><SlSocialLinkedin /></a>
             <p className='text-gray-200'>|</p>
-            <div className='items-center gap-3 border border-gray-300 px-2 py-1 rounded block sm:hidden'>
-              <CiSearch />
-            </div>
             <p><GoMoon /></p>
           </div>
         </section>

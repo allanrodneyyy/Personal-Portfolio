@@ -53,8 +53,8 @@ export function Subheader() {
           <div className='hidden sm:block'>
             <FiArrowDownRight color='light-gray' size={52} />
           </div>
-          <div>
-            <p className='hidden sm:flex md:w-sm text-base w-3/4 sm:text-3xl'>
+          <div className=''>
+            <p className='hidden sm:flex md:w-sm text-base w-3/4 sm:text-3xl '>
               Aspiring Software Engineer passionate about building scalable applications and intuitive user experiences.
             </p>
             <p className='flex sm:hidden md:w-sm text-base w-3/4 sm:text-2xl'>
@@ -67,7 +67,8 @@ export function Subheader() {
               <FiArrowDownRight color='light-gray' size={30} />
             </div>
             <a href="mailto:allanrodneymaniago@gmail.com" className=''>
-              <button className='button flex items-center gap-0.5 border px-5 py-2 sm:px-6 sm:py-4 text-white bg-black rounded-4xl hover:cursor-pointer'>
+              <button className='button shadow-xl flex items-center gap-0.5 border px-5 py-2 sm:px-6 sm:py-4 text-white bg-black rounded-4xl hover:cursor-pointer
+              '>
                 Contact me
                 <FiArrowUpRight />
               </button>

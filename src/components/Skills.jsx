@@ -38,7 +38,10 @@ export function Skills() {
             </section> */}
           </div>
 
-          <section className='flex flex-col gap-2 '>
+          <section>
+
+          </section>
+          <section className='flex flex-col gap-2 font-roboto-condensed'>
             <p className='text-gray-500 text-sm tracking-tighter'>FRONTEND</p>
             <div className='flex gap-2 flex-wrap'>
               <p className='flex items-center gap-1 text-sm border-dashed border-gray-400 border rounded-md py-1 px-2.5 shadow'>
@@ -68,7 +71,7 @@ export function Skills() {
 
             </div>
           </section>
-          <section className='flex flex-col gap-2'>
+          <section className='flex flex-col gap-2 font-roboto-condensed'>
             <p className='text-gray-500 text-sm tracking-tighter'>BACKEND & DATABASE</p>
             <div className='flex gap-2 flex-wrap'>
               <p className='flex items-center gap-1 text-sm border-dashed border-gray-400 border rounded-md py-1 px-2.5 shadow'>
@@ -96,7 +99,7 @@ export function Skills() {
             </div>
           </section>
 
-          <section className='flex flex-col gap-2'>
+          <section className='flex flex-col gap-2 font-roboto-condensed'>
             <p className='text-gray-500 text-sm tracking-tighter'>TOOLS</p>
             <div className='flex gap-2 flex-wrap'>
               <p className='flex items-center gap-1 text-sm border-dashed border-gray-400 border rounded-md py-1 px-2.5 shadow'>
@@ -123,8 +126,6 @@ export function Skills() {
                 <FaNpm color='#CC3534' />
                 npm
               </p>
-
-
 
             </div>
           </section>
