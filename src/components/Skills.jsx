@@ -3,7 +3,7 @@ import RotatingText from './Animations/RotatingText';
 import { FiArrowRight } from "react-icons/fi";
 import { BsStack } from "react-icons/bs";
 import { useEffect, useRef, useState } from 'react';
-import { FaDocker, FaGit, FaGitAlt, FaHtml5, FaNode, FaPython, FaFigma, FaGithub, FaNpm } from "react-icons/fa";
+import { FaDocker, FaGit, FaGitAlt, FaHtml5, FaNode, FaPython, FaFigma, FaGithub, FaNpm, FaJava } from "react-icons/fa";
 import { FaCss3 } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { RiTailwindCssFill } from "react-icons/ri";
@@ -11,6 +11,7 @@ import { SiVite, SiExpress, SiMongodb } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import { GrMysql } from 'react-icons/gr';
 import { VscCode } from 'react-icons/vsc';
+import { DiVisualstudio } from 'react-icons/di';
 
 export function Skills() {
   const [isHovered, setIsHovered] = useState(false);
@@ -83,6 +84,10 @@ export function Skills() {
                 Express.js
               </p>
               <p className='flex items-center gap-1 text-sm border-dashed border-gray-400 border rounded-md py-1 px-2.5 shadow'>
+                <FaJava color='#F89820' />
+                Java
+              </p>
+              <p className='flex items-center gap-1 text-sm border-dashed border-gray-400 border rounded-md py-1 px-2.5 shadow'>
                 <FaPython color='#306998 ' />
                 Python
               </p>
@@ -121,6 +126,10 @@ export function Skills() {
               <p className='flex items-center gap-1 text-sm border-dashed border-gray-400 border rounded-md py-1 px-2.5 shadow'>
                 <VscCode color='#0065A9' />
                 VS Code
+              </p>
+              <p className='flex items-center gap-1 text-sm border-dashed border-gray-400 border rounded-md py-1 px-2.5 shadow'>
+                <DiVisualstudio color='#800080 ' />
+                Visual Studio 2022
               </p>
               <p className='flex items-center gap-1 text-sm border-dashed border-gray-400 border rounded-md py-1 px-2.5 shadow'>
                 <FaNpm color='#CC3534' />
