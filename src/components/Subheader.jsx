@@ -7,7 +7,7 @@ export function Subheader() {
   return (
     <>
       <section id="home-section" className="p-5 font-roboto-condensed
-      grid grid-rows-3 min-h-4/5
+      grid grid-rows-3
       tracking-tight
       ">
         <div className='relative'>

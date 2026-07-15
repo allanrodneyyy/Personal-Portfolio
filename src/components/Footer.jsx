@@ -5,7 +5,7 @@ import Contributions from './Contributions';
 export function Footer() {
   return (
     <>
-      <section className='mt-15 p-5 grid grid-cols-1 sm:grid-cols-2
+      <section className='p-5 grid grid-cols-1 sm:grid-cols-2
       gap-5
       font-roboto-condensed'>
         <div className='flex flex-col gap-2'>

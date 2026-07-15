@@ -17,7 +17,7 @@ export function Skills() {
 
   return (
     <>
-      <section className='grid grid-cols-1 md:grid-cols-2 sm:my-10
+      <section id='skills' className='grid grid-cols-1 md:grid-cols-2 sm:my-10
       md:justify-between justify-center p-5 gap-10 sm:gap-5 items-center sm:py-20
       '>
 

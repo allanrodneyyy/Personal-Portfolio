@@ -14,15 +14,21 @@ export function Images({ setProjectNumber }) {
   const images = [{
     id: 0,
     title: 'Vanta',
-    path: vanta
+    path: vanta,
+    subtitle: 'E-Commerce Website',
+    status: 'In Progress'
   }, {
     id: 1,
     title: 'Student Task List',
-    path: studentTaskList
+    path: studentTaskList,
+    subtitle: 'Web Development',
+    status: 'Finished'
   }, {
     id: 2,
     title: 'Point of Sales and Reservation System',
-    path: shop
+    path: shop,
+    subtitle: 'C# Windows Application Form',
+    status: 'Finished'
   }
   ]
 
@@ -60,13 +66,18 @@ export function Images({ setProjectNumber }) {
   return (
     <>
       {images.map((image, index) => (
-        <div key={image.id} className="">
-          <img className="min-h-1/2 w-full"
-            data-index={index}
-            src={image.path}
-            ref={(el) => (imgRefs.current[index] = el)}
-          />
-          <p>{image.title}</p>
+        <div key={image.id} className="border border-dashed border-gray-300">
+          <div className="border-b border-dashed border-gray-300">
+            <img className="object-fill p-5 "
+              data-index={index}
+              src={image.path}
+              ref={(el) => (imgRefs.current[index] = el)}
+            />
+          </div>
+          <div className="flex gap-2 justify-between p-2 font-roboto-condensed font-semibold text-gray-500">
+            <p>{image.title} - {image.subtitle}</p>
+            <p>{image.status}</p>
+          </div>
         </div>
 
       ))}
