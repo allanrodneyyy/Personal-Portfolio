@@ -32,11 +32,6 @@ export function Header() {
         <p className='sm:hidden block text-gray-500'>A</p> */}
         <section className='flex gap-2'>
           <div className='flex gap-4 text-gray-500 items-center'>
-            <div className='items-center gap-3 border px-2 py-1 rounded hidden sm:flex'>
-              <CiSearch />
-              <p className='text-sm bg-white'>Search</p>
-              <CiKeyboard />
-            </div>
             <a href="#projects" className='hidden sm:block'>
               Projects
             </a>
@@ -49,9 +44,8 @@ export function Header() {
             <a href={cv} download="MANIAGO-CV-2026.pdf">
               <p><FaRegFilePdf /></p>
             </a>
-
-            <p><FiGithub /></p>
-            <p><SlSocialLinkedin /></p>
+            <a href='https://github.com/allanrodneyyy' target='_blank'><FiGithub /></a>
+            <a href='https://www.linkedin.com/in/allanrodneymaniago/ ' target='_blank'><SlSocialLinkedin /></a>
             <p className='text-gray-200'>|</p>
             <div className='items-center gap-3 border border-gray-300 px-2 py-1 rounded block sm:hidden'>
               <CiSearch />
