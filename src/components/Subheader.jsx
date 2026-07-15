@@ -10,6 +10,8 @@ export function Subheader() {
       grid grid-rows-3 px-5
       tracking-tight
       relative
+      min-h-screen
+      mb-5
       ">
         <div className='relative'>
           <h1
@@ -61,6 +63,7 @@ export function Subheader() {
             <p className='flex sm:hidden md:w-sm text-base w-3/4 sm:text-2xl'>
               that is passionate about building scalable applications and intuitive user experiences.
             </p>
+
           </div>
 
           <div className=''>
