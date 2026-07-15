@@ -82,7 +82,7 @@ function App() {
         initialOpacity={0}
         animateOpacity
         scale={1}
-        threshold={0.3}
+        threshold={0.1}
         delay={0}
       >
         <Projects />

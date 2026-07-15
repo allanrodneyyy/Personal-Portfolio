@@ -2,7 +2,7 @@ import { GitHubCalendar } from "react-github-calendar";
 
 export default function Contributions() {
   return (
-    <section className="w-full max-w-max border border-gray-400">
+    <section className="w-full max-w-max ">
       <div className="max-w-max">
         <div
           className="

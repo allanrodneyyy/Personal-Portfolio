@@ -25,7 +25,7 @@ export function Footer() {
         </div>
         <div className='flex flex-col gap-2'>
           <div className=''>
-            <p>Activity</p>
+            <p>GitHub Activity</p>
             <Contributions />
           </div>
         </div>

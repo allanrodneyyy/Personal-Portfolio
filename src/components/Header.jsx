@@ -45,7 +45,10 @@ export function Header() {
           </div>
           <div className='flex gap-2 sm:gap-5 text-gray-500 items-center'>
             <p className='text-gray-200 hidden sm:block'>|</p>
-            <p><FaRegFilePdf /></p>
+            <a href="MANIAGO-CV-2026.pdf" download="MANIAGO-CV-2026.pdf">
+              <p><FaRegFilePdf /></p>
+            </a>
+
             <p><FiGithub /></p>
             <p><SlSocialLinkedin /></p>
             <p className='text-gray-200'>|</p>
