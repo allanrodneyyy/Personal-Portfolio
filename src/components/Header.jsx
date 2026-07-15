@@ -15,7 +15,7 @@ export function Header() {
     <>
       <nav className="font-roboto-condensed
       border border-gray-200 flex justify-between 
-      p-5 tracking-tight items-center
+      p-5 tracking-tight items-center relative
       bg-gray-50">
         <div className='block sm:hidden'>
           <SlotWord className="sm:hidden block " word="ARFM" />

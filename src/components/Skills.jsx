@@ -22,9 +22,9 @@ export function Skills() {
       md:justify-between justify-center p-5 gap-10 sm:gap-5 items-center sm:py-20
       '>
 
-        <div className='text-6xl md:text-9xl tracking-tighter flex flex-col items-center md:block text-black '>
-          <p className='font-roboto-condensed font-semibold'>Developer</p>
+        <div className='text-5xl py-10 sm:py-0 md:text-9xl tracking-tighter flex flex-col items-center md:block text-black font-semibold '>
           <p className='font-roboto-condensed font-semibold'>Designer</p>
+          <p className='font-roboto-condensed font-semibold'>Developer</p>
           <p className='font-roboto-condensed font-semibold'>Creator/</p>
         </div>
 

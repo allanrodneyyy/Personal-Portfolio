@@ -6,9 +6,10 @@ import { FiArrowUpRight } from "react-icons/fi";
 export function Subheader() {
   return (
     <>
-      <section id="home-section" className="p-5 font-roboto-condensed
-      grid grid-rows-3
+      <section id="home-section" className=" font-roboto-condensed
+      grid grid-rows-3 px-5
       tracking-tight
+      relative
       ">
         <div className='relative'>
           <h1
@@ -49,7 +50,7 @@ export function Subheader() {
             Aspiring software engineer
           </h1>
         </div>
-        <div className='flex flex-col gap-5 text-gray-500 font-semibold tracking-tighter'>
+        <div className=' flex flex-col gap-5 text-gray-500 font-semibold tracking-tighter'>
           <div className='hidden sm:block'>
             <FiArrowDownRight color='light-gray' size={52} />
           </div>
@@ -76,23 +77,24 @@ export function Subheader() {
 
           </div>
         </div>
-        <div className=" fixed
-          bottom-3
-          right-3
-          md:bottom-8
-          md:right-8
+        <div className=" 
           flex
           flex-col
           items-end
           justify-end
           text-gray-500
-          font-semibold
-          z-50">
+          absolute
+          sm:right-5
+          sm:bottom-10
+          bottom-0
+          right-5
+          font-semibold">
           <p className='text-sm md:text-base'>Employment Status:</p>
           <p className='text-sm md:text-base'>Available for work</p>
           <p className='text-black text-4xl font-extrabold md:text-9xl'>JUL'26</p>
         </div>
       </section >
+
 
     </>
 
