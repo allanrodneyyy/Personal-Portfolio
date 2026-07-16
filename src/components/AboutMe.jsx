@@ -11,13 +11,9 @@ export function AboutMe() {
         />
       </div>
       <div className='flex flex-col w-full h-full  gap-2 text-gray-500 font-roboto-condensed font-semibold sm:align-center sm:justify-center'>
-        <div className='p-5 sm:w-[95%] md:w-[90%] lg:w-[70%] '>
-          <p className='text-base sm:text-base md:text-xl xl:text-xl 2xl:text-2xl'>I'm an aspiring software engineer driven by a passion for turning ideas into clean digital products.</p>
-        </div>
         <p className='px-5 text-xl sm:text-base md:text-xl lg:text-2xl xl:text-4xl 2xl:text-4xl text-black font-semibold'>ABOUT ME</p>
         <div className='flex gap-10 p-5 sm:w-[80%] md:w-[90%] lg:w-[70%] '>
-          <p className='text-base sm:text-base md:text-xl xl:text-xl 2xl:text-2xl'>Entry-level Software engineer experienced in front-end development and supporting back-end systems. Proficient in HTML,
-            CSS, JavaScript, with working knowledge of C#, Python, SQL, and Git. A fast learner who builds scalable, maintainable solutions
+          <p className='text-base sm:text-base md:text-xl xl:text-xl 2xl:text-2xl'>Entry-level Software engineer experienced in front-end development and supporting back-end systems. Proficient in React, JavaScript, HTML, CSS, with working knowledge of C#, Python, SQL, and Git. A fast learner who builds scalable, maintainable solutions
             with a user-focused approach.</p>
         </div>
       </div>

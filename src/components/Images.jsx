@@ -85,8 +85,8 @@ export function Images({ setProjectNumber }) {
   return (
     <>
       {images.map((image, index) => (
-        <div key={image.id} className="border border-dashed border-gray-300 rounded-2xl shadow-md">
-          <div className="border-b border-dashed border-gray-300">
+        <div key={image.id} className="border-dashed border-gray-400 border rounded-md shadow-md">
+          <div className="">
             <img className="object-fill p-5 "
               data-index={index}
               src={image.path}
@@ -94,7 +94,7 @@ export function Images({ setProjectNumber }) {
             />
           </div>
           <div className="flex gap-2 justify-between p-2 font-roboto-condensed font-semibold text-gray-500
-          border-b border-dashed border-gray-300">
+          border-b border-dashed border-gray-400">
             <p>{image.title} - {image.subtitle}</p>
             <p>{image.status}</p>
           </div>

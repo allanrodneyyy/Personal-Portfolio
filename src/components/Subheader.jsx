@@ -1,6 +1,6 @@
 import { LiaHighlighterSolid } from 'react-icons/lia';
 import '../index.css'
-import { FiArrowDownRight } from "react-icons/fi";
+import { FiArrowDownLeft, FiArrowDownRight } from "react-icons/fi";
 import { FiArrowUpRight } from "react-icons/fi";
 
 export function Subheader() {
@@ -92,6 +92,12 @@ export function Subheader() {
           bottom-0
           right-5
           font-semibold">
+          <div className='hidden sm:block'>
+            <FiArrowDownLeft color='light-gray' size={52} />
+          </div>
+          <div className='block sm:hidden mb-2'>
+            <FiArrowDownLeft color='light-gray' size={30} />
+          </div>
           <p className='text-sm md:text-base'>Employment Status:</p>
           <p className='text-sm md:text-base'>Available for work</p>
           <p className='text-black text-4xl font-extrabold md:text-6xl lg:text-8xl'>JUL'26</p>
