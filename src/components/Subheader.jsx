@@ -50,7 +50,7 @@ export function Subheader() {
             block"
           >
             Software Engineer &nbsp;
-            turning ideas into products
+            that turns ideas into products
           </h1>
         </div>
         <div className=' flex flex-col gap-5 text-gray-500 font-semibold tracking-tighter'>
@@ -59,7 +59,7 @@ export function Subheader() {
           </div>
           <div className=''>
             <p className='hidden sm:flex md:w-sm text-base w-3/4 sm:text-3xl '>
-              Software Engineer who turns ideas into products and passionate about building scalable applications and intuitive user experiences.
+              Software Engineer that turns ideas into products and passionate about building scalable applications and intuitive user experiences.
             </p>
             <p className='flex sm:hidden md:w-sm text-base w-3/4 sm:text-2xl'>
               and is passionate about building scalable applications and intuitive user experiences.
