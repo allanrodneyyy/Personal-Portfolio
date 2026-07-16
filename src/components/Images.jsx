@@ -86,7 +86,7 @@ export function Images({ setProjectNumber }) {
     <>
       {images.map((image, index) => (
         <div key={image.id} className="border-dashed border-gray-400 border rounded-md shadow-md">
-          <div className="">
+          <div className="hover:cursor-pointer">
             <img className="object-fill p-5 "
               data-index={index}
               src={image.path}

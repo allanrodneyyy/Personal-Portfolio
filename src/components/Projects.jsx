@@ -13,7 +13,7 @@ export function Projects() {
         <div className="grid grid-cols-1 sm:grid-cols-2">
           <div></div>
           <p className='tracking-tighter  sm:flex md:w-sm text-base w-3/4 sm:text-2xl text-gray-500 2xl:text-3xl'>
-            Ideas that is made into reliable digital projects through clean code, thoughtful design, and with purpose.
+            Ideas that are made into reliable digital projects through clean code, thoughtful design, and with purpose.
           </p>
         </div>
       </div>

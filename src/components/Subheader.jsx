@@ -72,7 +72,7 @@ export function Subheader() {
               <FiArrowDownRight color='light-gray' size={30} />
             </div>
             <a href="mailto:allanrodneymaniago@gmail.com" className=''>
-              <button className='button shadow-xl flex items-center gap-0.5 border px-5 py-2 sm:px-6 sm:py-4 text-white bg-black rounded-4xl hover:cursor-pointer
+              <button className='button shadow-xl flex items-center gap-0.5 border px-5 py-2 sm:px-6 sm:py-4 text-white bg-black sm:bg-gray-700 rounded-4xl transform transition-all duration-300 ease-in-out hover:bg-black hover:scale-105 hover:-translate-y-1 hover:shadow-lg
               '>
                 Contact me
                 <FiArrowUpRight />
