@@ -19,10 +19,10 @@ export function Skills() {
   return (
     <>
       <section id='skills' className='grid grid-cols-1 md:grid-cols-2 sm:my-10
-      md:justify-between justify-center p-5 gap-10 sm:gap-5 items-center sm:py-20
+      md:justify-between justify-center p-5 gap-10 sm:gap-5 items-center sm:py-10
       '>
 
-        <div className='text-5xl py-10 sm:py-0 md:text-9xl tracking-tighter flex flex-col items-center md:block text-black font-semibold '>
+        <div className='text-7xl py-10 sm:py-0 sm:text-8xl md:text-8xl lg:text-9xl tracking-tighter flex flex-col items-center md:block text-black font-semibold '>
           <p className='font-roboto-condensed font-semibold'>Designer</p>
           <p className='font-roboto-condensed font-semibold'>Developer</p>
           <p className='font-roboto-condensed font-semibold'>Creator/</p>
@@ -139,10 +139,8 @@ export function Skills() {
             </div>
           </section>
 
-
-
-          <div className='flex justify-around w-full gap-0.5'>
-            {/* <div className='flex gap-2'>
+          {/* <div className='flex justify-around w-full gap-0.5'>
+            <div className='flex gap-2'>
               <p className='hidden sm:block font-bold text-black'>Language</p>
 
               <section className='flex flex-col gap-0.5 text-gray-500'>
@@ -189,8 +187,8 @@ export function Skills() {
                   loop={false}
                 />
               </section>
-            </div> */}
-            {/* <div className='flex flex-col gap-2'>
+            </div>
+            <div className='flex flex-col gap-2'>
               <p className='hidden sm:block font-bold text-black'>Frameworks & Libraries</p>
               <section className='flex flex-col gap-0.5 text-gray-500'>
                 <RotatingText
@@ -269,8 +267,8 @@ export function Skills() {
                   loop={false}
                 />
               </section>
-            </div> */}
-          </div>
+            </div>
+          </div> */}
         </div>
       </section >
 

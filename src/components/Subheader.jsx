@@ -94,7 +94,7 @@ export function Subheader() {
           font-semibold">
           <p className='text-sm md:text-base'>Employment Status:</p>
           <p className='text-sm md:text-base'>Available for work</p>
-          <p className='text-black text-4xl font-extrabold md:text-9xl'>JUL'26</p>
+          <p className='text-black text-4xl font-extrabold md:text-6xl lg:text-8xl'>JUL'26</p>
         </div>
       </section >
 
