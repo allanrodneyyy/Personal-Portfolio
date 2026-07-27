@@ -72,7 +72,7 @@ export function Subheader() {
 
           <div className=''>
             <div className='block sm:hidden mb-2'>
-              <FiArrowDownRight stroke='black' size={30} />
+              <FiArrowDownRight stroke={`${theme === 'dark' ? "white" : "black"}`} size={30} />
             </div>
             <a href="mailto:allanrodneymaniago@gmail.com" className=''>
               <button className={`button shadow-xl flex items-center gap-0.5 border px-5 py-2 sm:px-6 sm:py-4 rounded-4xl transform transition-all duration-300 ease-in-out hover:scale-105 hover:-translate-y-1 hover:shadow-lg ${theme === 'dark' ? 'border-neutral-700 bg-neutral-100 text-neutral-950 hover:bg-white' : 'border-gray-200 bg-black text-white '}`}>
@@ -89,7 +89,7 @@ export function Subheader() {
             <TimeNow />
           </section>
           <section className='flex flex-col absolute right-0 bottom-14'>
-            <div className='justify-items-end'>
+            <div className='flex justify-end'>
               <div className='hidden sm:block mb-2 '>
                 <FiArrowDownLeft color='light-gray' size={52} />
               </div>
