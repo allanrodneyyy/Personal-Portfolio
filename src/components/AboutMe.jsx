@@ -5,7 +5,7 @@ export function AboutMe() {
   const { theme } = useTheme();
 
   return (
-    <section id="about" className={`grid grid-cols-1 sm:grid-cols-2 place-items-center transition-colors duration-300 ${theme === 'dark' ? 'text-neutral-200' : 'text-neutral-900'}`}>
+    <section id="about" className={`grid grid-cols-1 sm:grid-cols-2 place-items-center transition-colors duration-300 ${theme === 'dark' ? 'text-neutral-200' : 'text-neutral-900'} tracking-tighter`}>
       <div className="p-5 w-full md:w-full lg:w-[80%] xl:w-[60%] ">
         <img
           src={profilePicture}

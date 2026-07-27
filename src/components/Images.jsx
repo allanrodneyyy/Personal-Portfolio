@@ -88,7 +88,7 @@ export function Images({ setProjectNumber }) {
   return (
     <>
       {images.map((image, index) => (
-        <div key={image.id} className={`border-dashed border border-gray-400 rounded-md shadow-md`}>
+        <div key={image.id} className={`border-dashed border border-gray-400 rounded-md shadow-md tracking-tighter`}>
           <div className="hover:cursor-pointer">
             <img className="object-fill p-5 "
               data-index={index}
@@ -101,7 +101,7 @@ export function Images({ setProjectNumber }) {
             <p>{image.status}</p>
           </div>
           <div className="flex items-center justify-between p-2">
-            <a href={`http://${image.videoUrl}`} className={`${image.videoUrl ? "block" : "hidden"}`}>Development Video</a>
+            <a href={`http://${image.videoUrl}`} className={`${image.videoUrl ? "block" : "hidden"} text-sm font-normal`}>Development Video</a>
             {image.tools.map((tool, idx) => (
               <div key={idx} className=" flex gap-1 items-center"
               >

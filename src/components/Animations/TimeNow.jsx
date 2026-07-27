@@ -20,7 +20,7 @@ function TimeNow() {
   }, []);
 
   return (
-    <div className='flex flex-col font-roboto-condensed text-sm md:text-base text-gray-500'>
+    <div className='flex flex-col font-roboto-condensed text-sm md:text-base text-gray-500 tracking-tighter'>
       <p className='text-xs'>LOCAL TIME (AEST +10)</p>
       <p className={`text-2xl font-extrabold ${theme === 'dark' ? 'text-white' : 'text-black'}`}>{time}</p>
       <p className='text-xs'>Canberra, ACT</p>

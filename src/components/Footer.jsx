@@ -7,7 +7,7 @@ export function Footer() {
 
   return (
     <>
-      <section className={`p-5 grid grid-cols-1 sm:grid-cols-2 gap-5 font-roboto-condensed transition-colors duration-300 ${theme === 'dark' ? 'text-neutral-200' : 'text-neutral-900'}`}>
+      <section className={`p-5 grid grid-cols-1 sm:grid-cols-2 gap-5 font-roboto-condensed transition-colors duration-300 ${theme === 'dark' ? 'text-neutral-200' : 'text-neutral-900'} tracking-tighter`}>
         <div className='flex flex-col gap-2'>
           <p className={`border-b pb-2 font-bold ${theme === 'dark' ? 'border-neutral-800' : 'border-gray-200'}`}>Menu</p>
           <div className={`flex flex-col ${theme === 'dark' ? 'text-neutral-400' : 'text-gray-500'}`}>
