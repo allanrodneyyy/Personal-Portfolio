@@ -11,7 +11,7 @@ export function Footer() {
         <div className='flex flex-col gap-2'>
           <p className={`border-b pb-2 font-bold ${theme === 'dark' ? 'border-neutral-800' : 'border-gray-200'}`}>Menu</p>
           <div className={`flex flex-col ${theme === 'dark' ? 'text-neutral-400' : 'text-gray-500'}`}>
-            <a href="#home">Home</a>
+            <a href="/">Home</a>
             <a href="#projects">Projects</a>
             <a href="#about">About</a>
             <a href="mailto:allanrodneymaniago@gmail.com" className=''>Contact</a>
