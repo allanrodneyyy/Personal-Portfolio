@@ -12,17 +12,19 @@ import { FaReact } from "react-icons/fa";
 import { GrMysql } from 'react-icons/gr';
 import { VscCode } from 'react-icons/vsc';
 import { DiVisualstudio } from 'react-icons/di';
+import { useTheme } from '../context/ThemeContext';
 
 export function Skills() {
   const [isHovered, setIsHovered] = useState(false);
+  const { theme } = useTheme();
 
   return (
     <>
       <section id='skills' className='grid grid-cols-1 md:grid-cols-2 sm:my-10
-      md:justify-between justify-center p-5 gap-10 sm:gap-5 items-center sm:py-10
+      md:justify-between justify-center p-5 gap-10 sm:gap-5 items-center sm:py-10 transition-colors duration-300
       '>
 
-        <div className='text-7xl py-10 sm:py-0 sm:text-8xl md:text-8xl lg:text-9xl tracking-tighter flex flex-col items-center md:block text-black font-semibold '>
+        <div className={`text-7xl py-10 sm:py-0 sm:text-8xl md:text-8xl lg:text-9xl tracking-tighter flex flex-col items-center md:block font-semibold ${theme === 'dark' ? 'text-white' : 'text-black'}`}>
           <p className='font-roboto-condensed font-semibold'>Designer</p>
           <p className='font-roboto-condensed font-semibold'>Developer</p>
           <p className='font-roboto-condensed font-semibold'>Creator/</p>
@@ -30,7 +32,7 @@ export function Skills() {
 
         <div className='flex flex-col gap-2 sm:gap-4'>
           <div className='flex items-center justify-between w-4/5'>
-            <p className='text-black tracking-tighter text-xl sm:text-2xl font-roboto-condensed'>Technologies</p>
+            <p className={`tracking-tighter text-xl sm:text-2xl font-roboto-condensed ${theme === 'dark' ? 'text-white' : 'text-black'}`}>Technologies</p>
             {/* <section className='flex items-center gap-5 text-gray-500'>
               <button
                 onMouseEnter={() => setIsHovered(true)}
@@ -43,7 +45,7 @@ export function Skills() {
 
           </section>
           <section className='flex flex-col gap-2 font-roboto-condensed'>
-            <p className='text-gray-500 text-sm tracking-tighter'>FRONTEND</p>
+            <p className={`text-sm tracking-tighter ${theme === 'dark' ? 'text-neutral-400' : 'text-gray-500'}`}>FRONTEND</p>
             <div className='flex gap-2 flex-wrap'>
               <p className='flex items-center gap-1 text-sm border-dashed border-gray-400 border rounded-md py-1 px-2.5 shadow'>
                 <FaHtml5 color='#E34F26' />
@@ -73,7 +75,7 @@ export function Skills() {
             </div>
           </section>
           <section className='flex flex-col gap-2 font-roboto-condensed'>
-            <p className='text-gray-500 text-sm tracking-tighter'>BACKEND & DATABASE</p>
+            <p className={`text-sm tracking-tighter ${theme === 'dark' ? 'text-neutral-400' : 'text-gray-500'}`}>BACKEND & DATABASE</p>
             <div className='flex gap-2 flex-wrap'>
               <p className='flex items-center gap-1 text-sm border-dashed border-gray-400 border rounded-md py-1 px-2.5 shadow'>
                 <FaNode color='#3C873A' />
@@ -105,7 +107,7 @@ export function Skills() {
           </section>
 
           <section className='flex flex-col gap-2 font-roboto-condensed'>
-            <p className='text-gray-500 text-sm tracking-tighter'>TOOLS</p>
+            <p className={`text-sm tracking-tighter ${theme === 'dark' ? 'text-neutral-400' : 'text-gray-500'}`}>TOOLS</p>
             <div className='flex gap-2 flex-wrap'>
               <p className='flex items-center gap-1 text-sm border-dashed border-gray-400 border rounded-md py-1 px-2.5 shadow'>
                 <FaDocker color='#2496ED ' />

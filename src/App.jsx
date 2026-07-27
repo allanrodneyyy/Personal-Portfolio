@@ -4,21 +4,24 @@ import { Header } from './components/Header'
 import { Subheader } from './components/Subheader'
 import { Projects } from './components/Projects'
 import { Footer } from './components/Footer'
-import { Routes, Route } from 'react-router'
 import Particles from './components/Animations/Particles'
 import AnimatedContent from './components/Animations/AnimatedContent'
-import Contributions from './components/Contributions'
 import { AboutMe } from './components/AboutMe'
+import { useTheme } from './context/ThemeContext'
 
 
 function App() {
+  const { theme } = useTheme();
+  const particleColors = theme === 'dark'
+    ? ['#f5f5f5', '#e5e7eb', '#d1d5db']
+    : ['#171717', '#262626', '#404040'];
 
   return (
-    <div className="relative min-h-dvh">
+    <div className={`relative min-h-dvh transition-colors duration-300 ${theme === 'dark' ? 'bg-neutral-950 text-neutral-100' : 'bg-white text-neutral-900'}`}>
 
       <div className="fixed inset-0 -z-10 sm:block hidden">
         <Particles
-          particleColors={['#171717', '#262626', '#404040']}
+          particleColors={particleColors}
           particleCount={200}
           particleSpread={20}
           speed={0.09}
@@ -30,7 +33,7 @@ function App() {
 
       <div className="fixed inset-0 -z-10 sm:hidden block">
         <Particles
-          particleColors={['#171717', '#262626', '#404040']}
+          particleColors={particleColors}
           particleCount={100}
           particleSpread={10}
           speed={0.09}

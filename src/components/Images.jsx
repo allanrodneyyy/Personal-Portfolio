@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { useTheme } from '../context/ThemeContext';
 
 import studentTaskList from "../assets/screenshots/student-task-list-1.png";
 import vanta from "../assets/screenshots/vanta-1.png";
@@ -10,6 +11,7 @@ import { GrMysql } from "react-icons/gr";
 
 
 export function Images({ setProjectNumber }) {
+  const { theme } = useTheme();
   // const images = [
   //   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG6IHwMzND7z8Ztasmil8U0hFJxlrnKenEcJECDzcLrTvm6EWXTWKwxAA&s=10",
   //   "https://www.k12digest.com/wp-content/uploads/2024/03/1-3.jpg",
@@ -85,7 +87,7 @@ export function Images({ setProjectNumber }) {
   return (
     <>
       {images.map((image, index) => (
-        <div key={image.id} className="border-dashed border-gray-400 border rounded-md shadow-md">
+        <div key={image.id} className={`border-dashed rounded-md shadow-md ${theme === 'dark' ? 'border-neutral-700 bg-neutral-900' : 'border-gray-400 bg-white'}`}>
           <div className="hover:cursor-pointer">
             <img className="object-fill p-5 "
               data-index={index}
@@ -93,8 +95,8 @@ export function Images({ setProjectNumber }) {
               ref={(el) => (imgRefs.current[index] = el)}
             />
           </div>
-          <div className="flex gap-2 justify-between p-2 font-roboto-condensed font-semibold text-gray-500
-          border-b border-dashed border-gray-400">
+          <div className={`flex gap-2 justify-between p-2 font-roboto-condensed font-semibold ${theme === 'dark' ? 'text-neutral-400 border-neutral-700' : 'text-gray-500 border-gray-400'}
+          border-b border-dashed`}>
             <p>{image.title} - {image.subtitle}</p>
             <p>{image.status}</p>
           </div>

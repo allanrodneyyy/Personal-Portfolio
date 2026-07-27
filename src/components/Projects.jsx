@@ -1,18 +1,19 @@
 import { useState } from "react";
 import { Images } from "./Images";
+import { useTheme } from '../context/ThemeContext';
 
 export function Projects() {
 
   const [projectNumber, setProjectNumber] = useState("01");
+  const { theme } = useTheme();
 
   return (
-    <section id="projects" className="min-h-screen font-black p-5
-    font-roboto-condensed ">
+    <section id="projects" className={`min-h-screen font-black p-5 font-roboto-condensed transition-colors duration-300 ${theme === 'dark' ? 'text-neutral-100' : 'text-neutral-900'}`}>
       <div className="grid grid-cols-1 gap-10 mb-10 ">
         <p className="text-7xl md:text-9xl font-semibold tracking-tighter">Personal Project/ </p>
         <div className="grid grid-cols-1 sm:grid-cols-2">
           <div></div>
-          <p className='tracking-tighter  sm:flex md:w-sm text-base w-3/4 sm:text-2xl text-gray-500 2xl:text-3xl'>
+          <p className={`tracking-tighter sm:flex md:w-sm text-base w-3/4 sm:text-2xl 2xl:text-3xl ${theme === 'dark' ? 'text-neutral-400' : 'text-gray-500'}`}>
             Ideas that are made into reliable digital projects through clean code, thoughtful design, and with purpose.
           </p>
         </div>
