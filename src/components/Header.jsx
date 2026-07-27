@@ -37,7 +37,7 @@ export function Header() {
             <a href='https://github.com/allanrodneyyy' target='_blank'><FiGithub /></a>
             <a href='https://www.linkedin.com/in/allanrodneymaniago/ ' target='_blank'><SlSocialLinkedin /></a>
             <p className={`${theme === 'dark' ? 'text-neutral-700' : 'text-gray-200'}`}>|</p>
-            <button type="button" onClick={toggleTheme} className={`rounded-full p-2 transition-colors duration-300 ${theme === 'dark' ? 'bg-neutral-800 text-neutral-100 hover:bg-neutral-700' : 'bg-white text-neutral-900 hover:bg-gray-100'}`} aria-label="Toggle theme">
+            <button type="button" onClick={toggleTheme} className={`rounded-full p-2 transition-colors duration-300 ${theme === 'dark' ? 'bg-neutral-800 text-neutral-100 hover:bg-neutral-700' : 'bg-gray-50 text-neutral-900 hover:bg-gray-100'}`} aria-label="Toggle theme">
               {theme === 'dark' ? <GoSun /> : <GoMoon />}
             </button>
           </div>

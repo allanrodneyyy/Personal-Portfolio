@@ -5,3 +5,8 @@
 @theme {
   --font-roboto-condensed: "Roboto Condensed", sans-serif;
 }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+}
