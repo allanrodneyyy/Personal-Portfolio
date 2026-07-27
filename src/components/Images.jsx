@@ -23,6 +23,7 @@ export function Images({ setProjectNumber }) {
     title: 'Vanta',
     path: vanta,
     subtitle: 'E-Commerce Website',
+    videoUrl: 'www.youtube.com/watch?v=32M1al-Y6Ag&t',
     status: 'In Progress',
     tools: [{
       html: <FaHtml5 color="#E34F26" />,
@@ -99,9 +100,10 @@ export function Images({ setProjectNumber }) {
             <p>{image.title} - {image.subtitle}</p>
             <p>{image.status}</p>
           </div>
-          <div className="flex items-center self-end sm:self-auto">
+          <div className="flex items-center justify-between p-2">
+            <a href={`http://${image.videoUrl}`} className={`${image.videoUrl ? "block" : "hidden"}`}>Development Video</a>
             {image.tools.map((tool, idx) => (
-              <div key={idx} className="p-2 flex gap-1 items-center"
+              <div key={idx} className=" flex gap-1 items-center"
               >
 
                 <p>{tool.html} </p>
