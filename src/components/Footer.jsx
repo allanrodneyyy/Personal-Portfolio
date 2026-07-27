@@ -17,8 +17,8 @@ export function Footer() {
             <a href="mailto:allanrodneymaniago@gmail.com" className=''>Contact</a>
           </div>
 
-          <p className='border-b border-gray-200 pb-2 font-bold '>Socials</p>
-          <div className='text-gray-500 flex flex-col'>
+          <p className={`border-b pb-2 font-bold ${theme === 'dark' ? 'border-neutral-800' : 'border-gray-200'}`}>Socials</p>
+          <div className={`flex flex-col ${theme === 'dark' ? 'text-neutral-400' : 'text-gray-500'}`}>
             <a href='https://www.linkedin.com/in/allanrodneymaniago/ ' target='_blank'>LinkedIn</a>
             <a href='https://github.com/allanrodneyyy' target='_blank'>GitHub</a>
           </div>

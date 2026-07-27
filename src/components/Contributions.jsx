@@ -1,9 +1,6 @@
 import { GitHubCalendar } from "react-github-calendar";
-import { useTheme } from '../context/ThemeContext';
 
 export default function Contributions() {
-  const { theme } = useTheme();
-
   return (
     <section className="w-full max-w-max ">
       <div className="max-w-max">
@@ -21,14 +18,14 @@ export default function Contributions() {
             year={2026}
             theme={{
               light: [
-                "#f3f4f6",
+                "#f3f4f6", // empty
                 "#a7f3d0",
                 "#6ee7b7",
                 "#34d399",
                 "#059669",
               ],
               dark: [
-                "#18181b",
+                "#f3f4f6",
                 "#a7f3d0",
                 "#6ee7b7",
                 "#34d399",

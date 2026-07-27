@@ -58,7 +58,7 @@ export function Subheader() {
         </div>
         <div className={`flex flex-col gap-5 font-semibold tracking-tighter ${theme === 'dark' ? 'text-neutral-400' : 'text-gray-500'}`}>
           <div className='hidden sm:block'>
-            <FiArrowDownRight color='light-gray' size={52} />
+            <FiArrowDownRight stroke={`${theme === 'dark' ? "white" : "black"}`} size={52} />
           </div>
           <div className=''>
             <p className='hidden sm:flex md:w-sm text-base w-3/4 sm:text-3xl '>
@@ -72,10 +72,10 @@ export function Subheader() {
 
           <div className=''>
             <div className='block sm:hidden mb-2'>
-              <FiArrowDownRight color='light-gray' size={30} />
+              <FiArrowDownRight stroke='black' size={30} />
             </div>
             <a href="mailto:allanrodneymaniago@gmail.com" className=''>
-              <button className={`button shadow-xl flex items-center gap-0.5 border px-5 py-2 sm:px-6 sm:py-4 rounded-4xl transform transition-all duration-300 ease-in-out hover:scale-105 hover:-translate-y-1 hover:shadow-lg ${theme === 'dark' ? 'border-neutral-700 bg-neutral-100 text-neutral-950 hover:bg-white' : 'border-gray-200 bg-black text-white sm:bg-gray-700 hover:bg-black'}`}>
+              <button className={`button shadow-xl flex items-center gap-0.5 border px-5 py-2 sm:px-6 sm:py-4 rounded-4xl transform transition-all duration-300 ease-in-out hover:scale-105 hover:-translate-y-1 hover:shadow-lg ${theme === 'dark' ? 'border-neutral-700 bg-neutral-100 text-neutral-950 hover:bg-white' : 'border-gray-200 bg-black text-white '}`}>
                 Contact me
                 <FiArrowUpRight />
               </button>
@@ -89,13 +89,16 @@ export function Subheader() {
             <TimeNow />
           </section>
           <section className='flex flex-col absolute right-0 bottom-14'>
-            <div className='hidden sm:block mb-2 justify-items-end'>
-              <FiArrowDownLeft color='light-gray' size={52} />
+            <div className='justify-items-end'>
+              <div className='hidden sm:block mb-2 '>
+                <FiArrowDownLeft color='light-gray' size={52} />
+              </div>
+              <div className='block sm:hidden mb-2'>
+                <FiArrowDownLeft color='light-gray' size={30} />
+              </div>
             </div>
-            <div className='block sm:hidden mb-2 justify-items-end'>
-              <FiArrowDownLeft color='light-gray' size={30} />
-            </div>
-            <div className='text-gray-500'>
+
+            <div className='text-gray-500 justify-items-end'>
               <p className='text-sm md:text-base'>Employment Status:</p>
               <p className='text-sm md:text-base'>Available for work</p>
               <p className={`text-4xl font-extrabold md:text-6xl lg:text-8xl ${theme === 'dark' ? 'text-white' : 'text-black'}`}>JUL'26</p>
